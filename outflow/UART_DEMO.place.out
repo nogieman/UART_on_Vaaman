@@ -1,0 +1,177 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.1.110 
+           Compiled: May  7 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T120F324" ...
+           
+           ***** Beginning stage netlist pre-processing ... *****
+INFO     : Successfully Read in Verific binary Netlist dump file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.vdb".
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+INFO     : VDB Netlist Checker took 0.00160943 seconds.
+INFO     : 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 213.176 MB, end = 237.788 MB, delta = 24.612 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 125.92 MB, end = 126.456 MB, delta = 0.536 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 287.416 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Reading core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+INFO     : Successfully read core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+INFO     : Found 0 constant generator nets.
+INFO     : Pass 0: Swept away 0 nets with no fanout.
+INFO     : Pass 0: Swept away 0 blocks with no fanout.
+INFO     : Swept away 0 nets and 0 blocks in total.
+INFO     : Removed 0 LUT buffers
+INFO     : Successfully created VPR logical netlist from Verific binary DataBase file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.vdb".
+INFO     : Netlist pre-processing took 0.00459677 seconds.
+INFO     : 	Netlist pre-processing took 0 seconds (approximately) in total CPU time.
+INFO     : Netlist pre-processing virtual memory usage: begin = 213.176 MB, end = 237.788 MB, delta = 24.612 MB
+INFO     : Netlist pre-processing resident set memory usage: begin = 125.084 MB, end = 126.616 MB, delta = 1.532 MB
+INFO     : 	Netlist pre-processing peak resident set memory usage = 287.416 MB
+           ***** Ending stage netlist pre-processing *****
+           
+           ***** Beginning stage pre-packing ... *****
+           ***** Ending stage pre-packing *****
+           
+           ***** Beginning stage packing ... *****
+INFO     : Generate proto netlist for file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.net_proto" took 0.000326 seconds
+INFO     : Creating IO constraints file '/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.io_place'
+INFO     : Packing took 0.00107891 seconds.
+INFO     : 	Packing took 0 seconds (approximately) in total CPU time.
+INFO     : Packing virtual memory usage: begin = 237.788 MB, end = 237.788 MB, delta = 0 MB
+INFO     : Packing resident set memory usage: begin = 127.472 MB, end = 127.972 MB, delta = 0.5 MB
+INFO     : 	Packing peak resident set memory usage = 287.416 MB
+           ***** Ending stage packing *****
+           
+INFO     : Read proto netlist file /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.net_proto
+INFO     : Read proto netlist for file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.net_proto" took 0.000126 seconds
+INFO     : Setup net and block data structure took 0.001512 seconds
+INFO     : Reading core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+INFO     : Successfully read core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+           ***** Beginning stage packed netlist loading ... *****
+INFO     : Read proto netlist file /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.net_proto
+INFO     : Read proto netlist for file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.net_proto" took 0.00015 seconds
+INFO     : Setup net and block data structure took 0.001562 seconds
+INFO     : Packed netlist loading took 0.00180617 seconds.
+INFO     : 	Packed netlist loading took 0 seconds (approximately) in total CPU time.
+INFO     : Packed netlist loading virtual memory usage: begin = 237.788 MB, end = 237.788 MB, delta = 0 MB
+INFO     : Packed netlist loading resident set memory usage: begin = 145.444 MB, end = 145.444 MB, delta = 0 MB
+INFO     : 	Packed netlist loading peak resident set memory usage = 287.416 MB
+           ***** Ending stage packed netlist loading *****
+           
+           ***** Beginning stage pre-placement ... *****
+           
+           ***** Ending stage pre-placement *****
+           
+INFO     : No SDC file found.  Using default timing constraint of 1 ns.
+INFO     : NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+INFO     : Creating clock 'i_clk' with 1 sources
+           ***** Beginning stage initial placement ... *****
+INFO     : Reading core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+INFO     : Successfully read core interface constraints file "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.csv"
+INFO     : Writing IO placement constraints to "/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.io"
+INFO     : Reading placement constraints from '/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.interface.io'.
+INFO     : Reading placement constraints from '/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_pnr/UART_DEMO.io_place'.
+           ***** Ending stage initial placement *****
+           
+           ***** Beginning stage placement ... *****
+INFO     : Starting Global Placer with 6 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1        3187           -2378        52.7%
+INFO     :           2        2622           -2378        59.1%
+INFO     :           3        2273           -2378        62.6%
+INFO     :           4        2382           -2378        65.5%
+INFO     :           5        2354           -2378        65.5%
+INFO     :           6        2595           -2378        65.5%
+INFO     :           7        2570           -2378        65.5%
+INFO     :           8        2425           -2866        66.4%
+INFO     :           9        2348           -3876        70.0%
+INFO     :          10        1995           -4340        75.7%
+INFO     :          11        1910           -4249        80.1%
+INFO     :          12        1858           -6176        84.2%
+INFO     :          13        1825           -6293        86.9%
+INFO     :          14        1833           -6293        86.9%
+INFO     :          15        1783           -6733        89.7%
+INFO     :          16        1786           -6303        90.7%
+INFO     :          17        1786           -6303        90.7%
+INFO     :          18        1811           -6292        90.9%
+INFO     :          19        1795           -6778        92.1%
+INFO     :          20        1778           -6827        93.4%
+INFO     :          21        1737           -6827        94.2%
+INFO     :          22        1726           -6353        94.2%
+INFO     :          23        1678           -6876        95.8%
+INFO     :          24        1669           -6939        95.8%
+INFO     :          25        1647           -6415        96.1%
+INFO     :          26        1649           -6450        96.7%
+INFO     :          27        1638           -6435        97.0%
+INFO     :          28        1641           -6468        97.3%
+INFO     :          29        1641           -6435        97.4%
+INFO     :          30        1633           -6435        98.4%
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0         236            7132        30.0
+INFO     :           1         200            7157        28.0
+INFO     :           2         171            5958        25.8
+INFO     :           3         172            6358        23.7
+INFO     :           4         171            5991        21.7
+INFO     :           5         163            5991        19.8
+INFO     :           6         156            5947        18.0
+INFO     :           7         160            5931        16.4
+INFO     :           8         165            5488        15.0
+INFO     :           9         167            5803        13.7
+INFO     :          10         172            5670        12.5
+INFO     :          11         169            5442        11.4
+INFO     :          12         167            5316        10.4
+INFO     :          13         169            5316         9.4
+INFO     :          14         169            5316         8.6
+INFO     :          15         160            5316         7.9
+INFO     :          16         156            5316         7.2
+INFO     :          17         159            5370         6.5
+INFO     :          18         165            5447         6.0
+INFO     :          19         174            5614         5.4
+INFO     :          20         169            5651         5.0
+INFO     :          21         169            5614         4.6
+INFO     :          22         170            5445         4.1
+INFO     :          23         171            5388         3.8
+INFO     :          24         174            5238         3.4
+INFO     :          25         179            5296         3.1
+INFO     :          26         179            5651         2.9
+INFO     :          27         172            5614         2.6
+INFO     :          28         168            5651         2.4
+INFO     :          29         169            5403         2.2
+INFO     :          30         173            5460         2.0
+INFO     :          31         170            5403         1.8
+INFO     :          32         183            5460         1.7
+INFO     :          33         187            5541         1.5
+INFO     :          34         188            5578         1.4
+INFO     :          35         183            5541         1.3
+INFO     :          36         181            5578         1.2
+INFO     :          37         178            5541         1.1
+INFO     :          38         176            5552         1.0
+INFO     : Counted delay computer calls: 87660
+Placement successful: 124 cells are placed
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.00193183 at 46,285
+INFO     : Congestion-weighted HPWL per net: 11.7382
+INFO     : Post-placement cluster-level checks is successful
+INFO     : Checks is successful
+INFO     : Reading placement constraints from '/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.qplace'.
+INFO     : Finished Realigning Types (32 blocks needed type change)
+INFO     : Completed placement consistency check successfully.
+INFO     : Successfully created FPGA place file '/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.place'
+INFO     : Placement took 3.73821 seconds.
+INFO     : 	Placement took 9.99 seconds (approximately) in total CPU time.
+INFO     : Placement virtual memory usage: begin = 237.788 MB, end = 338.056 MB, delta = 100.268 MB
+INFO     : Placement resident set memory usage: begin = 145.736 MB, end = 239.024 MB, delta = 93.288 MB
+INFO     : 	Placement peak resident set memory usage = 287.416 MB
+           ***** Ending stage placement *****
+           

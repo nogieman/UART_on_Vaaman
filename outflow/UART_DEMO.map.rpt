@@ -1,0 +1,98 @@
+Efinity Synthesis report for project UART_DEMO
+Version: 2025.1.110
+Generated at: Jun 05, 2025 10:34:54
+Copyright (C) 2013 - 2025  All rights reserved.
+
+Top-level Entity Name : Top_design
+
+family : Trion
+device : T120F324
+project : UART_DEMO
+project-xml : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/UART_DEMO.xml
+root : Top_design
+I,include : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman
+output-dir : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow
+work-dir : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/work_syn
+write-efx-verilog : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.map.v
+binary-db : /media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/outflow/UART_DEMO.vdb
+insert-ios : 0
+max-carry-cascade : 640
+max_mult : -1
+max_ram : -1
+mode : speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+File List:
+
+/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/UART_RX.v
+/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/UART_TX.v
+/media/lalli/D_Drive_Deb/Vicharak_stuff/Codes_download/UART_on_Vaaman/Top_design.v
+
+### ### Report Section Start ### ###
+
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 16
+Total number of FFs with enable signals: 51
+CE signal <ceg_net15>, number of controlling flip flops: 15
+CE signal <ceg_net32>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n571>, number of controlling flip flops: 1
+CE signal <ceg_net16>, number of controlling flip flops: 1
+CE signal <ceg_net27>, number of controlling flip flops: 3
+CE signal <UART_RX_inst/n601>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n603>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n605>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n607>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n609>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n611>, number of controlling flip flops: 1
+CE signal <UART_RX_inst/n613>, number of controlling flip flops: 1
+CE signal <UART_TX_inst/state[2]>, number of controlling flip flops: 11
+CE signal <UART_TX_inst/n517>, number of controlling flip flops: 1
+CE signal <ceg_net29>, number of controlling flip flops: 3
+CE signal <UART_TX_inst/n572>, number of controlling flip flops: 8
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 4
+Total number of FFs with set/reset signals: 6
+SR signal <UART_RX_inst/n615>, number of controlling flip flops: 1
+SR signal <UART_RX_inst/state[2]>, number of controlling flip flops: 2
+SR signal <UART_TX_inst/state[2]>, number of controlling flip flops: 2
+SR signal <UART_TX_inst/n556>, number of controlling flip flops: 1
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                          FFs        ADDs        LUTs      RAMs DSP/MULTs
+-----------------------         ---        ----        ----      ---- ---------
+Top_design:Top_design         58(0)        0(0)      102(0)      0(0)      0(0)
+ +UART_RX_inst:UART_RX       32(32)        0(0)      65(65)      0(0)      0(0)
+ +UART_TX_inst:UART_TX       26(26)        0(0)      37(37)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+ Clock     Flip-Flops   Memory Ports    Multipliers
+ -----     ----------   ------------    -----------
+ i_clk             58              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	2
+OUTPUT PORTS    : 	3
+
+EFX_LUT4        : 	102
+   1-2  Inputs  : 	19
+   3    Inputs  : 	32
+   4    Inputs  : 	51
+EFX_FF          : 	58
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 7s
+Elapsed synthesis time : 7s
