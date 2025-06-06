@@ -1,0 +1,15 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Jun 06, 2025 18:37:17
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] macro 'CLKS_PER_BIT' is redefined (VERI-1295) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_RX.v:3)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_RX.v:69)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_RX.v:78)
+[EFX-0011 VERI-WARNING] expression size 4 truncated to fit in target size 3 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_RX.v:88)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_RX.v:104)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_TX.v:55)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_TX.v:72)
+[EFX-0011 VERI-WARNING] expression size 4 truncated to fit in target size 3 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_TX.v:81)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 15 (VERI-1209) (/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/UART_TX.v:99)

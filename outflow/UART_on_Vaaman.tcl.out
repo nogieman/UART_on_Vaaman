@@ -1,0 +1,19 @@
+DEBUG    : Initialising Efx::ConcurrencyControl with 6 threads [Debug]
+INFO     : --max_threads set to 6 
+INFO     : ***** Beginning Analysis ... *****
+INFO     : Analysis took 0.34906 seconds.
+INFO     : 	Analysis took 0.05 seconds (approximately) in total CPU time.
+INFO     : Analysis virtual memory usage: begin = 584.776 MB, end = 584.776 MB, delta = 0 MB
+INFO     : Analysis resident set memory usage: begin = 258.664 MB, end = 262.304 MB, delta = 3.64 MB
+INFO     : 	Analysis peak resident set memory usage = 262.304 MB
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+INFO     : Elaboration took 0.0485338 seconds.
+INFO     : 	Elaboration took 0.02 seconds (approximately) in total CPU time.
+INFO     : Elaboration virtual memory usage: begin = 584.776 MB, end = 584.776 MB, delta = 0 MB
+INFO     : Elaboration resident set memory usage: begin = 262.304 MB, end = 263.828 MB, delta = 1.524 MB
+INFO     : 	Elaboration peak resident set memory usage = 263.828 MB
+INFO     : ***** Ending Elaboration ... *****
+INFO     : --max_threads set to 6 
+INFO     : --max_threads set to 6 
+INFO     : --max_threads set to 6 

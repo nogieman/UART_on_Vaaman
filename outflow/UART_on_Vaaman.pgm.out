@@ -1,0 +1,21 @@
+INFO     : Efinix FPGA Bitstream Generator.
+INFO     : Version: 2025.1.110 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+INFO     : Compiled: May  7 2025.
+INFO     : Using source file "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/work_pnr/UART_on_Vaaman.lbf"
+INFO     : Generating HEX programming file for device "T120F324", family "Trion"
+INFO     : Using periphery source file "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.lpf"
+INFO     : Generating bit file: "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.bit"
+INFO     : HEX Generation Options Summary:
+INFO     : 	Listing options specified to bitstream generation:
+INFO     : 	spi_low_power_mode                       = on
+INFO     : 	oscillator_clock_divider                 = DIV8
+INFO     : 	io_weak_pullup                           = on
+INFO     : 	enable_remote_update                     = off
+INFO     : 	release_tri_then_reset                   = on
+INFO     : Finished generating "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.hex"
+INFO     : Efinix Bitstream Generator took 2.65692 seconds.
+INFO     : 	Efinix Bitstream Generator took 2.18 seconds (approximately) in total CPU time.
+INFO     : Efinix Bitstream Generator virtual memory usage: begin = 34.92 MB, end = 332.592 MB, delta = 297.672 MB
+INFO     : Efinix Bitstream Generator resident set memory usage: begin = 15.892 MB, end = 283.024 MB, delta = 267.132 MB
+INFO     : 	Efinix Bitstream Generator peak resident set memory usage = 283.024 MB

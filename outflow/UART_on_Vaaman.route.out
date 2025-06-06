@@ -1,0 +1,114 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.1.110 
+           Compiled: May  7 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T120F324" ...
+           
+           ***** Beginning stage routing graph generation ... *****
+INFO     : Read ipin pattern from /media/lalli/D_Drive_Deb/Soft_Stuff_Deb/efinity/2025.1/arch/./routing/ipin_oph.xml
+INFO     : Finished parsing ipin pattern file '/media/lalli/D_Drive_Deb/Soft_Stuff_Deb/efinity/2025.1/arch/./routing/ipin_oph.xdb'.
+INFO     : Finished parsing switch_block file '/media/lalli/D_Drive_Deb/Soft_Stuff_Deb/efinity/2025.1/arch/./routing/sb_connectivity_subset.xdb'.
+INFO     : BuildGraph process took 13.4575 seconds.
+INFO     : 	BuildGraph process took 12.96 seconds (approximately) in total CPU time.
+INFO     : BuildGraph process virtual memory usage: begin = 338.056 MB, end = 2055.78 MB, delta = 1717.73 MB
+INFO     : BuildGraph process resident set memory usage: begin = 238.264 MB, end = 1953.06 MB, delta = 1714.8 MB
+INFO     : 	BuildGraph process peak resident set memory usage = 1953.06 MB
+INFO     : check rr_graph process took 0.486111 seconds.
+INFO     : 	check rr_graph process took 0.48 seconds (approximately) in total CPU time.
+INFO     : check rr_graph process virtual memory usage: begin = 2211.73 MB, end = 2244.22 MB, delta = 32.496 MB
+INFO     : check rr_graph process resident set memory usage: begin = 2109.06 MB, end = 2141.63 MB, delta = 32.572 MB
+INFO     : 	check rr_graph process peak resident set memory usage = 2141.63 MB
+INFO     : Generated 6653381 RR nodes and 25233830 RR edges
+INFO     : This design has 0 global control net(s). See /media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.route.rpt for details.
+INFO     : Routing graph took 14.3999 seconds.
+INFO     : 	Routing graph took 13.76 seconds (approximately) in total CPU time.
+INFO     : Routing graph virtual memory usage: begin = 338.056 MB, end = 2244.22 MB, delta = 1906.17 MB
+INFO     : Routing graph resident set memory usage: begin = 237.708 MB, end = 2141.76 MB, delta = 1904.05 MB
+INFO     : 	Routing graph peak resident set memory usage = 2141.76 MB
+           ***** Ending stage routing graph generation *****
+           
+           ***** Beginning stage routing ... *****
+INFO     : No SDC file found.  Using default timing constraint of 1 ns.
+INFO     : NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+INFO     : Creating clock 'i_clk' with 1 sources
+INFO     :  ---------      -------     --------------      -------------
+INFO     :  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+INFO     :  ---------      -------     --------------      -------------
+INFO     :          1          247              5.859              0.275
+INFO     :          2          109              5.596              0.162
+INFO     :          3           61              5.596              0.158
+INFO     :          4           32              5.596              0.149
+INFO     :          5           17              5.596              0.152
+INFO     :          6           12              5.596              0.146
+INFO     :          7            8              5.596               0.15
+INFO     :          8            4              5.596              0.143
+INFO     :          9            4              5.831               0.15
+INFO     :         10            2              6.095              0.139
+INFO     :         11            0              6.163              0.145
+           
+INFO     : Successfully routed netlist after 11 routing iterations and 368576 heapops
+INFO     : Completed net delay value cross check successfully.
+           ***** Beginning stage routing check ... *****
+           ***** Ending stage routing check *****
+           
+INFO     : Serial number (magic cookie) for the routing is: 394996033
+INFO     : Netlist fully routed.
+INFO     : Successfully created FPGA route file '/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.route'
+INFO     : Routing took 3.04723 seconds.
+INFO     : 	Routing took 3.19 seconds (approximately) in total CPU time.
+INFO     : Routing virtual memory usage: begin = 2244.22 MB, end = 2640.87 MB, delta = 396.648 MB
+INFO     : Routing resident set memory usage: begin = 2141.76 MB, end = 2451.5 MB, delta = 309.744 MB
+INFO     : 	Routing peak resident set memory usage = 2451.5 MB
+           ***** Ending stage routing *****
+           
+           ***** Beginning stage final timing analysis ... *****
+INFO     : No SDC file found.  Using default timing constraint of 1 ns.
+INFO     : NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+INFO     : Creating clock 'i_clk' with 1 sources
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+   i_clk        6.319        158.253         (R-R)
+
+Geomean max period: 6.319
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+     i_clk            i_clk            1.000            -5.319           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+     i_clk            i_clk            0.000            0.307            (R-R)
+
+WARNING  : Clock domain between i_clk (rising) and i_clk (rising) may not meet (slack: -5.319 ns) the setup (max) timing requirement
+INFO     : Write Timing Report to "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.timing.rpt" ...
+INFO     : final timing analysis took 0.202315 seconds.
+INFO     : 	final timing analysis took 0.08 seconds (approximately) in total CPU time.
+INFO     : final timing analysis virtual memory usage: begin = 2640.87 MB, end = 2640.87 MB, delta = 0 MB
+INFO     : final timing analysis resident set memory usage: begin = 2453.08 MB, end = 2454.04 MB, delta = 0.952 MB
+INFO     : 	final timing analysis peak resident set memory usage = 2454.04 MB
+           ***** Ending stage final timing analysis *****
+           
+           ***** Beginning stage bitstream generation ... *****
+INFO     : Reading core interface constraints file "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.interface.csv"
+INFO     : Successfully read core interface constraints file "/media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/outflow/UART_on_Vaaman.interface.csv"
+INFO     : Finished writing bitstream file /media/lalli/D_Drive_Deb/Efinity_stuff/UART_on_Vaaman/work_pnr/UART_on_Vaaman.lbf.
+INFO     : Bitstream generation took 2.52361 seconds.
+INFO     : 	Bitstream generation took 2.34 seconds (approximately) in total CPU time.
+INFO     : Bitstream generation virtual memory usage: begin = 2640.87 MB, end = 2640.87 MB, delta = 0 MB
+INFO     : Bitstream generation resident set memory usage: begin = 2454.18 MB, end = 2456.75 MB, delta = 2.576 MB
+INFO     : 	Bitstream generation peak resident set memory usage = 2456.75 MB
+           ***** Ending stage bitstream generation *****
+           
+INFO     : The entire flow of EFX_PNR took 26.3354 seconds.
+INFO     : 	The entire flow of EFX_PNR took 30.99 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 119.344 MB, end = 2640.87 MB, delta = 2521.53 MB
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 39.712 MB, end = 2457.58 MB, delta = 2417.86 MB
+INFO     : 	The entire flow of EFX_PNR peak resident set memory usage = 2457.58 MB
